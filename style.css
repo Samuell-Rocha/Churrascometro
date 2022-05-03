@@ -1,0 +1,59 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(./img/meuchurras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    
+    
+}
+
+input{
+    display:block;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.content{
+    position: relative;
+    top: 115px;
+}
+#resultado{
+    text-align: center;
+    position: relative;
+    color: white;
+    bottom: 50px;
+    right: 200px;
+    max-width: 150px;
+    padding: 10px;
+    
+}
+
+button{
+    padding: 8px;
+    width: 100px;
+    background: linear-gradient(#c62a25,#0c0607);
+    color: white;
+    border-radius:10px ;
+}
+.Botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover{
+    background: linear-gradient(#7a1713,#1d0a0e);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#precos{
+    position: relative;
+    left: 500px;
+}
