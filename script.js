@@ -24,6 +24,7 @@ function calcular(){
     resultado.style.background = "url(./img/FundoChurras.jpg)"
     resultado.style.border = "1px inset black";
     resultado.style.backgroundSize = "cover"
+    resultado.style.borderRadius = "10px"
 }
 
 function CarnePP(duracao){
