@@ -1,4 +1,5 @@
-.container{
+
+.meuchurras{
     font-family: Arial, Helvetica, sans-serif;
     background:url(./img/meuchurras.png);
     background-repeat: no-repeat;
@@ -12,7 +13,7 @@
     
 }
 
-input{
+.content > input{
     display:block;
     padding: 8px;
     margin-bottom: 10px;
@@ -53,7 +54,37 @@ button:hover{
     transform: scale(1.1);
 }
 
-#precos{
+.precos{
     position: relative;
-    left: 500px;
+    max-width: 500px;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin: auto;
+    color:  white;
+    border-radius: 10px solid black;
+    background: url(./img/FundoChurras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    top: 20px;
+}
+    
+
+ 
+table, th, td:not(#semborda){
+    border:1px solid black;
+  }
+
+    
+
+
+select {
+    width: 150px;
+    height: 25px;
+    
+}
+
+table > input{
+    width: 150px;
+    height: 30px;
 }
