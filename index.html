@@ -11,43 +11,75 @@
 </head>
 
 <body>
-
     <div class="container">
-        <div class="content">
-            <input id="adultos" type="number" placeholder="Adultos" name="adulto">
-            <input id="criancas" type="number" placeholder="Crianças" name="criancas">
-            <input id="duracao" type="number" placeholder="Duracao" name="duracao(h)">
-            <div class="Botoes">
-                <button onclick="calcular()">Calcular</button>
-                <button class="BotaPrecoo" onclick="calcular()">Preço</button>
+        <div class="meuchurras">
+            <div class="content">
+                <input id="adultos" type="number" placeholder="Adultos" name="adulto">
+                <input id="criancas" type="number" placeholder="Crianças" name="criancas">
+                <input id="duracao" type="number" placeholder="Duracao" name="duracao(h)">
+                <div class="Botoes">
+                    <button onclick="calcular()">Calcular</button>
+                    <button class="BotaPrecoo" onclick="calcular()">Preço</button>
+                </div>
             </div>
+
+            <div id="resultado"></div>
         </div>
 
-
-        <div id="resultado"></div>
-        <div id="precos">
-            
+        <div class="precos">
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th>Carne</td>
-                        <th>Cerveja</td>
-                        <th>Bebidas</td>
+                        <td id="semborda"></td>
+                        <th>Tipo</td>
+                        <th>Quantidade</td>
+                        <th>Preço</td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Bovina</td>
+                        <th>Carne</th>
+                        <td>
+                            <select name="seletor" id="carnes">
+                                <option value="Bovina">Bovina</option>
+                                <option value="Suina">Suína</option>
+                                <option value="Frango">Frango</option>
+                            </select>
+                        </td>
+                        <td><input type="number" name="quantidade" id="QuantidadeCarne"></td>
+                    </tr>
+                    <tr>
+
+                        <th>Cerveja</th>
+                        <td>
+                            <select name="seletor" id="cervejas">
+                                <option value="Brahma">Brahma</option>
+                                <option value="Itaipava">Itaipava</option>
+                                <option value="Heinekein">Heinekein</option>
+                                <option value="Skol">Skol</option>
+                            </select>
+                        </td>
+                        <td><input type="number" name="quantidade" id="QuantidadeCerveja"></td>
+                    </tr>
+                    <tr>
+                        <th>Bebidas</th>
+                        <td>
+                            <select name="seletor" id="bebidas">
+                                <option value="Refrigerante">Refrigerante</option>
+                                <option value="Suco">Suco</option>
+                                <option value="AguacomGas">Agua com Gás</option>
+                            </select>
+                        </td>
+
+                        <td><input type="number" name="quantidade" id="QuantidadeBebida"></td>
                     </tr>
                 </tbody>
-                <td></td>
+
             </table>
-            
+
         </div>
+
     </div>
-
-
     <script src="./script.js"></script>
 
 </body>
